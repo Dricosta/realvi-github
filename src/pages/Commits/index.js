@@ -47,6 +47,7 @@ function Commits({ userName, repositoryName }) {
                 onChange={e => setSearchCommit(e.target.value)}
             />
 
+
             {searchResults.map(commit => {
                 const dateCommit = new Date(commit.commit.author.date);
 
